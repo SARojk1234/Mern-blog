@@ -9,7 +9,7 @@ const DashProfile = () => {
         <h1 className='my-7 text-center font-semibold text-3xl'>Profile</h1>
         <form className='flex flex-col gap-5'>
             <div className='w-32 h-32 self-center cursor-pointer shadow-md overflow-hidden rounded-full'>
-            <img scr={currentUser.profilePicture} alt="user" className='rounded-full w-full h-full object-cover border-8 border-[lightgray]'/>
+            <img src={currentUser.profilePicture} alt="user" className='rounded-full w-full h-full object-cover border-8 border-[lightgray]'/>
             </div>
             <TextInput type='text' id='username' placeholder='username' defaultValue={currentUser.username}/>
             <TextInput type='email' id='email' placeholder='email' defaultValue={currentUser.email}/>
