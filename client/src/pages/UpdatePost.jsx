@@ -47,7 +47,7 @@ const UpdatePost = () => {
     }
   }, [postId]);
 
-  const handleUploadImage = async () => {
+  const handleUploadImage = async (file) => {
     try {
       if (!file) {
         setImageUploadError("Please select an image");
